@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:background="#2F2F2F"
+    android:layout_height="match_parent">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:id="@+id/and03"
+    android:text="Hello AND 03"
+    android:textColor="@color/white"
+
+    android:textSize="30sp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="10sp"
+    android:layout_height="wrap_content">
+
+
+</TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/welcome"
+        android:text="Welcome to layouts"
+        android:layout_below="@id/and03"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginBottom="120sp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <View
+        android:id="@+id/shape"
+
+        android:layout_below="@id/welcome"
+        android:background="@drawable/circle"
+        android:layout_height="90dp"
+        android:layout_width="90sp"
+        android:layout_centerHorizontal="true">
+
+    </View>
+
+    <View
+        android:id="@+id/svg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/shape"
+
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/ic_name_1">
+
+    </View>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/shape"
+        android:layout_marginTop="73dp"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:text="NAME - SUBHAM KUMAR"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/name"
+
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:text="AGE : 50"
+        android:layout_marginTop="13dp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="183dp"
+        android:layout_height="31dp"
+         android:layout_marginTop="480dp"
+        android:layout_marginLeft="200dp"
+        android:background="#C4C4C4">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="183dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="200dp"
+        android:background="#C4C4C4">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="540dp"
+        android:layout_marginLeft="200dp"
+        android:background="#C4C4C4">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/last"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginLeft="200dp"
+        android:background="#C4C4C4">
+
+    </TextView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_below="@id/last"
+        android:layout_marginTop="30dp"
+        android:text="Next"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:layout_height="200dp"
+        android:background="#00FF00">
+
+    </Button>
+
+
+
+</RelativeLayout>
