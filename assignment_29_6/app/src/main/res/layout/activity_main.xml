@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+>
+
+
+    <TextView
+        android:id="@+id/tvEnter"
+        android:layout_width="wrap_content"
+        android:text="welcome here"
+
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your school name ">
+
+    </EditText>
+
+
+    <Button
+        android:id="@+id/btClickhere"
+        android:layout_width="wrap_content"
+        android:text="Click me"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+</LinearLayout>
