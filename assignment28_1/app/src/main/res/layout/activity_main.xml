@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:background="#551947"
+
+        android:textFontWeight="1"
+        app:drawableStartCompat="@drawable/ic_vectorarrow">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvfirst"
+        android:layout_width="match_parent"
+        android:background="#551947"
+
+        android:text="@string/fly_to_seoul"
+        android:textColor="@color/white"
+
+        android:layout_marginLeft="35dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+
+        android:textSize="30sp"
+
+        android:layout_height="90dp"
+        android:layout_marginStart="35dp"
+        android:paddingStart="30dp"
+        >
+
+    </TextView>
+
+        <TextView
+            android:layout_below="@+id/tvfirst"
+            android:layout_width="match_parent"
+            android:background="#551947"
+            android:layout_height="400dp"
+            >
+
+        </TextView>
+
+   <TextView
+       android:id="@+id/tvadult"
+       android:layout_width="match_parent"
+       android:drawableStart="@drawable/filledadult"
+       android:layout_below="@id/tvfirst"
+       android:text="     1 Adult, Economy"
+       android:textSize="29"
+       android:textColor="@color/white"
+       android:layout_marginLeft="20dp"
+       android:paddingTop="30dp"
+       android:layout_height="wrap_content">
+
+   </TextView>
+
+
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/vectorlocation"
+            android:layout_below="@id/tvadult"
+            android:text="        Seoul, Korea"
+            android:textSize="29"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"
+            android:paddingTop="30dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
