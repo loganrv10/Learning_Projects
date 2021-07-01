@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">scroll you</string>
+    <string name="add_new_employee">Add New Employee</string>
+    <string name="title">Title</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="e_mail">e-mail</string>
+    <string name="subham">Subham</string>
+    <string name="kumar">kumar</string>
+    <string name="enter_e_mail">Enter E-mail</string>
+</resources>
