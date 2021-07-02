@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/tvSchdulemeet"
+        style="@style/TextViewLight"
+        android:text="Schedule Meeting"
+        />
+
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/NameText"
+        android:text="Name" />
+    
+    <EditText
+        android:id="@+id/edNameEnter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:textSize="25sp"
+        android:hint="@string/nrupul"/>
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:orientation="horizontal"
+         android:layout_height="wrap_content"
+         >
+         <Button
+             android:id="@+id/tvBtn"
+             android:text="@string/tue_22_dec_2020"
+
+             style="@style/buttonDate"
+             android:padding="10dp"
+            />
+
+         <Button
+             android:id="@+id/tvBtnTime"
+             android:text="@string/_11_30am"
+             android:layout_marginLeft="20dp"
+             style="@style/buttonDate"
+             android:padding="10dp"
+             />
+     </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:orientation="vertical"
+          android:layout_height="wrap_content"
+       >
+          <TextView
+              android:id="tvPeopletoInvite"
+              android:text="@string/people_to_invite"
+              android:layout_marginStart="20dp"
+              android:textSize="20sp"
+              style="@style/NameText"
+              tools:ignore="RtlCompat" />
+
+
+          </LinearLayout>
+
+             <EditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="22sp"
+                 android:drawableEnd="@drawable/ic_baseline_search_24"
+                 android:textSize="20sp">
+
+             </EditText>
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:orientation="horizontal"
+              android:layout_height="wrap_content">
+
+         <ImageView
+
+             android:layout_width="wrap_content"
+              android:src="@drawable/prateek_sukla"
+             android:layout_height="wrap_content">
+
+         </ImageView>
+        <ImageView
+            android:id="@+id/prateek"
+            style="@style/PhotoStyle"
+            android:layout_width="wrap_content"
+            android:src="@drawable/jeff_bezos"
+            android:layout_height="wrap_content">
+
+         </ImageView>
+
+
+
+</LinearLayout>
+</LinearLayout>
