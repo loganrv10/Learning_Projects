@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/View1"
+        android:layout_width="match_parent"
+        android:background="#0583EA"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/arrow_back"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableLeft="@drawable/arrow_back" />
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="42dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toEndOf="@+id/tvArrow"
+        app:layout_constraintTop_toTopOf="parent"
+       />
+
+  <EditText
+      android:id="@+id/edEmail"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@+id/View1"
+      android:layout_margin="20dp"
+      android:textSize="30sp"
+      app:layout_constraintStart_toStartOf="parent"
+      android:hint="E- mail"/>
+
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edEmail"
+        android:layout_margin="20dp"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/password"/>
+
+    <TextView
+        android:id="@+id/usePhonenum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edPassword"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/use_phone_number"
+        android:gravity="center"
+        android:textColor="#0583EA"
+
+        />
+      <Button
+          android:id="@+id/buttonLogin"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@+id/usePhonenum"
+         android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginTop="50dp"
+          android:textSize="25sp"
+          app:layout_constraintStart_toStartOf="parent"
+          android:text="@string/login"
+          android:gravity="center"
+          />
+
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        android:layout_margin="20dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Forgot Password ?"
+        android:gravity="center"
+        android:textColor="#858992"
+
+        />
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/forgotPassword"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="or"
+            android:textStyle="bold"
+            android:gravity="center"
+          />
+
+    <Button
+        android:id="@+id/continueFB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/or"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/ic_vectorfb"
+        android:paddingLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Continue with facebook "
+
+        android:gravity="center"
+        android:background="#3B5998"
+         />
+
+    <Button
+        android:id="@+id/continueGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/continueFB"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:paddingLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/continue_with_google"
+        android:drawableStart="@drawable/ic_flat_color_icons_googlegoogle"
+        android:gravity="center"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

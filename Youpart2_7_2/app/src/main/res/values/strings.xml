@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">You part 2_7_2</string>
+    <string name="login">Login</string>
+    <string name="use_phone_number">USE PHONE NUMBER</string>
+    <string name="password">Password</string>
+    <string name="fotgot_password">FOTGOT PASSWORD</string>
+    <string name="continue_with_google">Continue with google</string>
+</resources>
