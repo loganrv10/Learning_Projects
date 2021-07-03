@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:ignore="NotSibling">
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/card"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          >
+
+
+          <ImageView
+              android:id="@+id/img1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="40dp"
+              android:src="@drawable/Capture"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+      </androidx.cardview.widget.CardView>
+
+       <TextView
+           android:id="@+id/Text11"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="60dp"
+           android:paddingLeft="73dp"
+           app:layout_constraintTop_toBottomOf="@id/card"
+           app:drawableStartCompat="@drawable/head1" />
+
+       <TextView
+           android:id="@+id/Text12"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="60dp"
+           android:paddingLeft="73dp"
+           app:layout_constraintTop_toBottomOf="@id/Text11"
+           app:drawableStartCompat="@drawable/para" />
+
+
+       <androidx.cardview.widget.CardView
+           android:id="@+id/card2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@id/Text12"
+
+           >
+
+
+           <ImageView
+               android:id="@+id/img2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="40dp"
+               android:src="@drawable/land"
+               app:layout_constraintStart_toStartOf="@id/card2"
+           />
+       </androidx.cardview.widget.CardView>
+
+       <TextView
+           android:id="@+id/Text13"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="60dp"
+           android:paddingLeft="73dp"
+           app:layout_constraintTop_toBottomOf="@id/card2"
+           app:drawableStartCompat="@drawable/head2"
+           android:paddingStart="73dp"
+           tools:ignore="RtlSymmetry" />
+
+       <TextView
+           android:id="@+id/Text112"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="60dp"
+           android:paddingLeft="73dp"
+           app:layout_constraintTop_toBottomOf="@id/Text13"
+           app:drawableStartCompat="@drawable/para"
+           android:paddingStart="73dp"
+           tools:ignore="RtlSymmetry" />
+
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
