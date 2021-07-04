@@ -1,0 +1,2 @@
+rootProject.name = "2ndassign_2_7"
+include ':app'

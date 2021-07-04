@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:orientation="horizontal"
+      android:layout_marginLeft="23dp"
+      android:layout_marginRight="23dp"
+     >
+       <TextView
+       style="@style/numBtn"
+       android:text="1"/>
+
+       <TextView
+           style="@style/numBtn"
+           android:text="2"/>
+       <TextView
+           style="@style/numBtn"
+           android:text="3"/>
+       <TextView
+           style="@style/numBtn"
+           android:text="4"/>
+       <TextView
+           style="@style/numBtn"
+           android:text="5"/>
+       <TextView
+           style="@style/numBtn"
+           android:text="6"/>
+       <TextView
+           style="@style/numBtn"
+           android:text="7"/>
+       <TextView
+           style="@style/numBtn"
+           android:text="8"/>
+       <TextView
+           style="@style/numBtn"
+           android:text="9"/>
+       <TextView
+           style="@style/numBtn"
+           android:text="10"/>
+
+
+
+
+
+  </LinearLayout>
+
+
+
+
+</ScrollView>
