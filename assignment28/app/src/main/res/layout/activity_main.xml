@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="3"
+android:layout_weight="3"
     android:orientation="vertical"
    >
 
@@ -12,10 +13,134 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#079527"
-        android:drawableStart="@drawable/arrow"
-        android:drawableEnd="@drawable/search"
-        android:padding="29dp"
-       />
+        app:drawableStartCompat="@drawable/ic_baseline_arrow_back_24"
+        app:drawableEndCompat="@drawable/ic_baseline_search_24" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:background="#079527"
+
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="90dp"
+            android:src="@drawable/ic_carbon_play_outlineplay" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/square"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/square"
+             android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="60dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle2"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="100dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle3"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="140dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_bookmarks_24"
+            android:layout_marginLeft="380dp"
+          />
+        <Button
+            android:layout_below="@+id/square"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="40dp"
+            android:text="      Try now     "
+            android:padding="12dp"
+            android:layout_height="wrap_content"
+           />
+
+        <Button
+            android:id="@+id/install"
+            android:layout_below="@+id/square"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="#079527"
+            android:textColor="@color/white"
+            android:layout_marginLeft="250dp"
+            android:text="      Install     "
+            android:padding="12dp"
+            android:layout_height="wrap_content"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/install"
+            android:src="@drawable/circle"
+            android:layout_margin="30dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/install"
+            android:src="@drawable/circle"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="160dp"
+           />
+
+        <ImageView
+            android:id="@+id/lastcircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/install"
+            android:src="@drawable/circle"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="290dp"
+            />
+
+        <ImageView
+
+           android:layout_below="@+id/lastcircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/longrect"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            />
+        <ImageView
+
+            android:layout_below="@+id/lastcircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/smallrectangle"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="70dp"
+            />
+    </RelativeLayout>
 
 
 </LinearLayout>
