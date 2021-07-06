@@ -10,14 +10,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
-    private EditText medfirstname;
-    private EditText medlastname;
-    private EditText medEmail;
-    private EditText medPhone;
-    private Button mBtn_saveDetail;
-
-
+public class MainActivity extends AppCompatActivity{
+    EditText medfirstname,medlastname,medEmail,medPhone;
+    Button mBtn_saveDetail;
+    private static final String SHARED_PREFERENCE_KEY = "FirstDir";
 
 
     @Override
@@ -25,31 +21,38 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button mBtn_saveDetail = findViewById(R.id.Btn_saveDetail);
-        initViewsAndListeners();
+        initViews();
+        mBtn_saveDetail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String firstName = medfirstname.getText().toString().trim();
+                String lastName = medlastname.getText().toString();
+                String emailId = medEmail.getText().toString();
+                String phoneNumber = medPhone.getText().toString();
 
-        Context context = getActivity();
-        SharedPreferences sharedPref = context.getSharedPreferences(
-                getString(R.string.preference_file_key), Context.MODE_PRIVATE);
+//                using shared preference share
+                SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFERENCE_KEY, MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString("firstName", firstName);
+                editor.putString("lastName", lastName);
+                editor.putString("emailid", emailId);
+                editor.putString("phoneNumber", phoneNumber);
+                editor.apply();
 
-        }
-
-    private Context getActivity() {
-    }
-
-    private void initViewsAndListeners() {
+//                using Intent
+                Intent intent = new Intent(MainActivity.this, SecondScreen.class);
+                startActivity(intent);
+            }
+        });
+}
+    private void initViews() {
         medfirstname = findViewById(R.id.edfirstname);
         medlastname = findViewById(R.id.edlastname);
         medEmail = findViewById(R.id.edEmail);
         medPhone = findViewById(R.id.edPhone);
-        mBtn_saveDetail = findViewById(R.id.Btn_saveDetail);
-        medfirstname.setOnClickListener((View.OnClickListener) this);
-        medlastname.setOnClickListener((View.OnClickListener) this);
-        medEmail.setOnClickListener((View.OnClickListener) this);
-        mBtn_saveDetail.setOnClickListener((View.OnClickListener) this);
-        
-
-
+       mBtn_saveDetail = findViewById(R.id.Btn_saveDetail);
     }
+
 }
-}
-}
+
+

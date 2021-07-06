@@ -1,4 +1,7 @@
 <resources>
 
     <string name="preference_file_key" />
+    <string name="date_of_the_show">date_of_the_show</string>
+    <string name="confirm_details">Confirm details</string>
+    <string name="first_name">First name</string>
 </resources>

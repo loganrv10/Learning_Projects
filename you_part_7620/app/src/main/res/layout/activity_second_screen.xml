@@ -33,8 +33,8 @@
         android:layout_marginTop="23dp"
         android:textSize="27sp"/>
 
-    <TextView
-        android:id="@+id/tvNoOfSeats"
+    <EditText
+        android:id="@+id/mEtNoOfSeats"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="123dp"
@@ -43,17 +43,19 @@
         android:hint="enter_no_of_seats"
         android:textSize="27sp"/>
 
-    <TextView
-        android:id="@+id/tvDateOfShow"
+    <EditText
+        android:id="@+id/mEtDateOfShow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="53dp"
         android:gravity="center"
         android:layout_gravity="center"
-        android:hint="date_of_the_show"
-        android:textSize="27sp"/>
+        android:hint="@string/date_of_the_show"
+        android:textSize="27sp"
+        android:autofillHints="" />
 
     <Button
+        android:id="@+id/mBtnBook"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
