@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#BC1C2B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/one"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:drawableStartCompat="@drawable/ic_baseline_arrow_back_24" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/one"
+        android:layout_marginTop="23dp"
+        android:text="SIGN UP"
+        android:layout_marginLeft="322dp"
+         android:textColor="@color/white"
+        android:textSize="22dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/ndbox"
+        android:layout_width="match_parent"
+        android:layout_height=""
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/one"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="Welcome back"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="@+id/ndbox"
+        tools:layout_editor_absoluteY="165dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue to sign up!"
+        android:textSize="26dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="212dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+
+    <EditText
+        android:id="@+id/etPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter the Name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="372dp" />
+
+    <EditText
+        android:id="@+id/etEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Your E-mail"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="403dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="480dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="513dp" />
+
+    <Button
+        android:id="@+id/buttonsignup"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="#BC1C2B"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="603dp" />
+
+    <Button
+        android:id="@+id/buttoncreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Have an Account ? Sign In"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="667dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

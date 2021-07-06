@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#BC1C2B"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:text="WELCOME"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:text="@string/masai_school_is_a_21st_century_coding_school_that_cares_about_you"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:paddingStart="50dp"
+        android:paddingLeft="50dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/masia"
+        android:padding="42dp"/>
+
+    <Button
+        android:id="@+id/signinhome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="29dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/createaccounthome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create an account"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@color/black"
+        android:padding="29dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"/>
+
+</LinearLayout>
