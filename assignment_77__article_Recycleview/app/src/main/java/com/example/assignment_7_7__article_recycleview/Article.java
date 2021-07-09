@@ -15,19 +15,19 @@ public class Article {
         this.mTvAuthorName = mTvAuthorName;
     }
 
-    public int getIvImage() {
-        return ivImage;
+    public String getIvImage() {
+        return ivImage +" ";
     }
 
     public String getTvHeading() {
-        return tvHeading;
+        return tvHeading +" ";
     }
 
     public String getTvPara(){
-        return mTvPara;
+        return mTvPara +" ";
     }
 
     public String getmTvAuthorName() {
-        return mTvAuthorName;
+        return mTvAuthorName +" ";
    }
 }
