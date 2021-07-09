@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/Relativelayout"
+        android:layout_margin="20dp"
+        android:background="@drawable/rect"
+        android:layout_height="wrap_content"
+    >
+
+
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="match_parent"
+            android:text="@string/microsoft"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+         <ImageView
+             android:id="@+id/ivPicture"
+             android:layout_width="100dp"
+             android:layout_margin="15dp"
+             android:src="@drawable/jeff"
+             android:layout_below="@id/tvHeading"
+             android:layout_height="120dp"/>
+
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age_56"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvHeading"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/ivPicture"
+            android:layout_toRightOf="@+id/ivPicture" />
+
+        <TextView
+            android:id="@+id/tvProfession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profession_buisness"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvAge"
+
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/ivPicture"
+            android:layout_toRightOf="@+id/ivPicture" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
