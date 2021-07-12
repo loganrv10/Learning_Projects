@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
          if (i % 3 ==0){
              itemList.add(new Famous(R.drawable.bhai,"Masai","31","Business"));
          }else if (i % 3 == 1){
-             itemList.add(new Famous(R.drawable.subham,"Intezaar","21","Business"));
+             itemList.add(new Famous(R.drawable.subham,"Zebra","21","Business"));
          }else if (i % 3 == 2){
              itemList.add(new Famous(R.drawable.jeff,"Amazon","56","Business"));
          }
