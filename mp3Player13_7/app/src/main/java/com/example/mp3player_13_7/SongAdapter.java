@@ -11,9 +11,11 @@ import java.util.ArrayList;
 
 public class SongAdapter extends RecyclerView.Adapter<SongsViewHolder> {
    private ArrayList<Songs>songsList;
+    private ItemOnClicker itemOnClicker;
 
-    public SongAdapter(ArrayList<Songs> songsList) {
+    public SongAdapter(ArrayList<Songs> songsList, ItemOnClicker itemOnClicker) {
         this.songsList = songsList;
+        this.itemOnClicker = itemOnClicker;
     }
 
     @NonNull
@@ -27,7 +29,7 @@ public class SongAdapter extends RecyclerView.Adapter<SongsViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull SongsViewHolder holder, int position) {
     Songs songs = songsList.get(position);
-     holder.setData(songs);
+     holder.setData(songs,itemOnClicker);
     }
 
     @Override

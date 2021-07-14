@@ -6,11 +6,15 @@ public class Songs {
     private String SongName;
     private int ivImageView;
     private String tvDuration;
+    private int music;
 
-    public Songs(String songName, int ivImageView, String tvDuration) {
+
+
+    public Songs(String songName, int ivImageView, String tvDuration, int music) {
         SongName = songName;
         this.ivImageView = ivImageView;
         this.tvDuration = tvDuration;
+        this.music = music;
     }
 
     public String getSongName() {
@@ -19,6 +23,10 @@ public class Songs {
 
     public int getIvImageView() {
         return ivImageView;
+    }
+
+    public int getMusic() {
+        return music;
     }
 
     public String getTvDuration() {

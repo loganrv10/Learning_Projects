@@ -11,12 +11,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements ItemOnClicker{
 
     private RecyclerView recyclerView;
-    private TextView mSongName;
-    private TextView mtvDuration;
-    private ImageView mivImageView;
+
     private Button mtvPlay, mtvPause, mtvDelete;
     ArrayList<Songs> songsList = new ArrayList<>();
 
@@ -30,27 +28,52 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setRecycleView() {
-        SongAdapter songAdapter = new SongAdapter(songsList);
+        SongAdapter songAdapter = new SongAdapter(songsList,this);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(songAdapter);
     }
 
     private void buildList() {
-     for (int i = 0; i < 9; i++){
-         Songs songs = new Songs("besabriya",R.drawable.besabriya,"3 min");
+     for (int i = 0; i < 19; i++){
+
+        if (i % 2 == 0){
+            Songs songs = new Songs("Fikar Not " + i,R.drawable.besabriya,"3 min",R.raw.fikar);
+            songsList.add(songs);
+        }else {
+            Songs songs = new Songs("Kal ki baat "+ i,R.drawable.bhai,"4min",R.raw.kkb);
+            songsList.add(songs);
+        }
      }
 
 
     }
 
     private void initView() {
-        mSongName = findViewById(R.id.SongName);
-        mivImageView = findViewById(R.id.ivImageView);
-        mtvDuration = findViewById(R.id.tvDuration);
         recyclerView = findViewById(R.id.recycleView);
-        mtvPlay = findViewById(R.id.tvPlay);
-        mtvPause = findViewById(R.id.tvPause);
-        mtvDelete = findViewById(R.id.tvDelete);
     }
+
+
+    @Override
+    public void onClick(int position, Songs song) {
+//        if (mediaPlayer != null) {
+//            mediaPlayer.reset();
+//        }
+//        mediaPlayer = MediaPlayer.create(getApplicationContext(), song.getMusic());
+//        mediaPlayer.start();
+    }
+
+    @Override
+    public void pause() {
+//        if (mediaPlayer != null) {
+//            mediaPlayer.pause();
+//        }
+    }
+
+    @Override
+    public void delete(Songs song) {
+      songsList.remove(song);
+
+    }
+
 }
