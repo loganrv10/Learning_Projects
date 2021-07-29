@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/EdOrganisationName1"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:hint="Organisation name"/>
+
+
+    <TextView
+        android:id="@+id/EdCustomerName1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:hint="Organisation name"/>
+
+    <TextView
+        android:id="@+id/EdPhoneNo1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:hint="Organisation name"/>
+
+    <TextView
+        android:id="@+id/EdEmail1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:hint="Organisation name"/>
+
+    <TextView
+        android:id="@+id/EdAddress1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:hint="Organisation name"/>
+
+
+    <TextView
+        android:id="@+id/EdTaxNumber1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:hint="Organisation name"/>
+
+</LinearLayout>

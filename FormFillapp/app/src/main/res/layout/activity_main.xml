@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <Button
+        android:id="@+id/BtnCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:drawableEnd="@drawable/ic_baseline_check_24"
+        android:drawableRight="@drawable/ic_baseline_check_24" />
+
+
+
+     <EditText
+         android:id="@+id/EdOrganisationName"
+         android:layout_marginTop="12dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="Organisation name"/>
+
+
+    <EditText
+        android:id="@+id/EdCustomerName"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:hint="Organisation name"/>
+
+    <EditText
+        android:id="@+id/EdPhoneNo"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:hint="Organisation name"/>
+
+    <EditText
+        android:id="@+id/EdEmail"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:hint="Organisation name"/>
+
+    <EditText
+        android:id="@+id/EdAddress"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:hint="Organisation name"/>
+
+
+    <EditText
+        android:id="@+id/EdTaxNumber"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:hint="Organisation name"/>
+
+
+
+
+
+
+</LinearLayout>
