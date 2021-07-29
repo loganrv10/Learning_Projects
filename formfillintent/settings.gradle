@@ -1,0 +1,3 @@
+rootProject.name = "form fill intent"
+include ':app'
+include ':lib'
