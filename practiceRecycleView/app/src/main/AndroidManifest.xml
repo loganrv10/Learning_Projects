@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.buildweek">
+    package="com.example.practicerecycleview">
 
     <application
         android:allowBackup="true"
@@ -8,15 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.BuildWeek">
-        <activity android:name=".MaleFemaleCheck"></activity>
-        <activity android:name=".VacationAdventure" />
-        <activity android:name=".Exercise_main" />
-        <activity android:name=".NightLifeFifth" />
-        <activity android:name=".CodingQuizSixth" />
-        <activity android:name=".QuizThreeQuiz" />
-        <activity android:name=".quizHeightTwo" />
-        <activity android:name=".quizOneWhyHappn" />
+        android:theme="@style/Theme.PracticeRecycleView">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
