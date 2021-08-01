@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">sharepreference</string>
+    <string name="save_data">Save data</string>
+    <string name="phonenumber">PhoneNumber</string>
+    <string name="emailaddress">EmailAddress</string>
+    <string name="firstname">FirstName</string>
+    <string name="lastname">LastName</string>
+    <string name="dateofshow">DateOfShow</string>
+    <string name="noofseats">NoOfSeats</string>
+    <string name="confirm">Confirm</string>
+</resources>
