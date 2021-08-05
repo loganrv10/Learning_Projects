@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">planPermission</string>
+    <string name="location_and_storage_permission">Location and Storage Permission</string>
+</resources>
