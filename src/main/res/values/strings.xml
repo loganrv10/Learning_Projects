@@ -1,7 +1,6 @@
 <resources>
-    <string name="app_name">Tastify</string>
-    <string name="add_task">add task</string>
-    <string name="remove_task">remove task</string>
-    <string name="edit_task">edit_task</string>
-    <string name="do_homework">Do homework</string>
+    <string name="app_name">1 Activity 2 fragments</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_fragment">First Fragment</string>
 </resources>

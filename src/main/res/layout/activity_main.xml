@@ -4,50 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+   android:weightSum="2"
+    android:id="@+id/hub"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <Button
-        android:id="@+id/BtnAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/add_task"/>
 
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
+    <fragment
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:name="com.example.a1activity2fragments.fragment_1"/>
 
-        android:layout_height="wrap_content">
- <LinearLayout
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:orientation="vertical"
-     >
-        <EditText
-            android:id="@+id/edtText"
-            android:layout_width="wrap_content"
-            android:hint="nalinikanta"
-            android:text="subham"
-            android:layout_height="wrap_content"
-            />
-
-        <Button
-            android:id="@+id/newBtn"
-            android:text="done"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-     </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycleview"
+    <fragment
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-     />
-
-
-
-
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:name="com.example.a1activity2fragments.fragments_2"/>
 
 </LinearLayout>
