@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:id="@+id/idImageGithub"
+        android:src="@drawable/bhai"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/idImageGithub"
+        android:textStyle="bold"
+        android:text="Name - "
+        android:id="@+id/idName"
+        android:layout_margin="12dp"
+        android:textSize="20dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idName"
+            android:layout_toEndOf="@+id/idImageGithub"
+            android:text="Login - "
+            android:id="@+id/idLogin"
+            android:textStyle="bold"
+            android:layout_margin="12dp"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
